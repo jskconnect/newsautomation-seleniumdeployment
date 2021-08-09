@@ -1,0 +1,114 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 21,
+        "name": "To Confirm the news is valid",
+        "description": "",
+        "id": "validate-the-new-is-valid-and-not-fake;to-confirm-the-news-is-valid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2935670900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Launch the application",
+            "match": {
+              "location": "Home_stepdefn.launch_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5471527200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "navigate to \"News\" home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "News",
+                  "offset": 13
+                }
+              ],
+              "location": "Home_stepdefn.navigate_to_home_page(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14019835000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I confirm the news \"Covid\" by searching in google",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Covid",
+                  "offset": 20
+                }
+              ],
+              "location": "Home_stepdefn.i_confirm_the_news_by_searching_in_google(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "UK doctors alarmed at ‘shambolic’ rollout of Covid jabs for children"
+                ],
+                "line": 18
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@smoke"
+          },
+          {
+            "line": 1,
+            "name": "@NewsValidation"
+          },
+          {
+            "line": 13,
+            "name": "@Newssearch"
+          },
+          {
+            "line": 1,
+            "name": "@regression"
+          },
+          {
+            "line": 13,
+            "name": "@Checknews"
+          }
+        ]
+      }
+    ],
+    "name": "validate the new is valid and not Fake",
+    "description": "",
+    "id": "validate-the-new-is-valid-and-not-fake",
+    "keyword": "Feature",
+    "uri": "features/validatenewsArticle.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@NewsValidation"
+      },
+      {
+        "line": 1,
+        "name": "@smoke"
+      },
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  }
+]

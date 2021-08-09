@@ -1,0 +1,140 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 92600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "To Confirm the news is valid",
+        "description": "",
+        "id": "confirm-the-news-is-valid-by-searching-in-google;to-confirm-the-news-is-valid;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 84503200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12779982800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Launch the application",
+            "match": {
+              "location": "Home_stepdefn.launch_The_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3271944700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "navigate to \"News\" home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "News",
+                  "offset": 13
+                }
+              ],
+              "location": "Home_stepdefn.navigate_To_Home_Page(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9950900500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I confirm the news \"the\" by searching in google",
+            "match": {
+              "arguments": [
+                {
+                  "val": "the",
+                  "offset": 20
+                }
+              ],
+              "location": "Home_stepdefn.i_Confirm_The_News_By_Searching_In_Google(String,DataTable)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Swimming Australia boss Alex Baumann quits after three months in the job"
+                ],
+                "line": 22
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@smoke"
+          },
+          {
+            "line": 1,
+            "name": "@NewsValidation"
+          },
+          {
+            "line": 1,
+            "name": "@newsregression"
+          },
+          {
+            "line": 17,
+            "name": "@searchConfirmNews"
+          },
+          {
+            "line": 17,
+            "name": "@Checknews"
+          }
+        ]
+      }
+    ],
+    "name": "Confirm the news is valid by Searching in Google",
+    "description": "",
+    "id": "confirm-the-news-is-valid-by-searching-in-google",
+    "keyword": "Feature",
+    "uri": "features/confirmNews.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@NewsValidation"
+      },
+      {
+        "line": 1,
+        "name": "@smoke"
+      },
+      {
+        "line": 1,
+        "name": "@newsregression"
+      }
+    ]
+  }
+]
